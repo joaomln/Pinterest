@@ -1,10 +1,24 @@
 import React from "react";
-
+import { CardStyleBig, CardStyleMedium, CardStyleSmall, } from './styles'
  function Card() {
     return (
-      <div>
-        
-      </div>
+      <>
+      <CardStyleBig></CardStyleBig>
+      <CardStyleSmall></CardStyleSmall>
+      <CardStyleMedium></CardStyleMedium>
+      <CardStyleBig></CardStyleBig>
+      <CardStyleSmall></CardStyleSmall>
+      <CardStyleMedium></CardStyleMedium>
+      <CardStyleBig></CardStyleBig>
+      <CardStyleSmall></CardStyleSmall>
+      <CardStyleMedium></CardStyleMedium>
+      <CardStyleBig></CardStyleBig>
+      <CardStyleSmall></CardStyleSmall>
+      <CardStyleMedium></CardStyleMedium>
+      <CardStyleBig></CardStyleBig>
+      <CardStyleSmall></CardStyleSmall>
+      <CardStyleMedium></CardStyleMedium>
+      </>
     );
   }
 

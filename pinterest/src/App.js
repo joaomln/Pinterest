@@ -1,13 +1,16 @@
 import Layout from "./components/layout/Layout";
-import {Container} from './styles';
+import Card from "./components/card/Card";
+
 
 function App() {
   return (
-    <Container>
-      
-      <Layout></Layout>
+
+    <div id="root">
+      <Layout>
+         <Card></Card>
+      </Layout>
      
-     </Container>
+    </div>
     
   );
 }

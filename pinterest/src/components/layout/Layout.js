@@ -1,12 +1,14 @@
 import React from "react";
-
+import Card from "../card/Card";
 import {LayoutStyle} from './styles';
 
- function Layout() {
+ function Layout(props) {
     return (
-      <div>
-        <LayoutStyle>Hello</LayoutStyle>
-      </div>
+     <>
+        <LayoutStyle>
+          <Card/>
+        </LayoutStyle>
+        </>
     );
   }
   
