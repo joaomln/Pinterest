@@ -18,10 +18,10 @@ function NavBar() {
            </IconButton>
         </LogoWrapper>
         <HomePageButton>
-        <a href='/'>Homepage</a>
+        <a href='/'>Página inicial</a>
         </HomePageButton>
         <FollowingButton>
-        <a href='/'>Following</a>
+        <a href='/'>hoje</a>
         </FollowingButton>
         <SearchWrapper>
             <SearchBarWrapper>
@@ -29,7 +29,7 @@ function NavBar() {
                     <SearchIcon/>
                 </IconButton>
                 <form>
-                        <input type="text"/>
+                        <input type="text" placeholder='Pesquisar'/>
                         <button type='submit'></button>
                     </form>
             </SearchBarWrapper>

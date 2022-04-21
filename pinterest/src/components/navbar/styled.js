@@ -8,8 +8,9 @@ padding: 12px 4px 4px 16px;
 background-color: white;
 color: black;
 
-
-
+top: 0;
+left: 0;
+width: 100%;
 `
 
 export const LogoWrapper = styled.div`
