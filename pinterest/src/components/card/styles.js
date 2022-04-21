@@ -16,9 +16,7 @@ img{
  
 }
 
-:hover {
-  opacity: 0.5;
-}
+
 
 `
 export const StandardCardSocialInfo = styled.div`
@@ -33,9 +31,7 @@ img{
   border-radius: 16px;
 }
 
-img :hover {
-  opacity: 0.5;
-}
+
 
 `
 
@@ -59,14 +55,14 @@ grid-row-end: span 26;
 export const CardStyleBigSocial = styled(StandardCardSocialInfo)`
 grid-row-end: span 45;
 
-:hover {
-  opacity: 0.5;
-}
+
 
 
 `
 
-
+export const CardStyleSmallSocial = styled(StandardCardSocialInfo)`
+grid-row-end: span 26;
+`
 export const CardInfoSocial = styled(StandardCardInfo)`
 
 grid-row-end: span 16;
@@ -78,12 +74,10 @@ height: 10%;
   height: 30px;
   border-radius: 50%;
 }
-img :hover {
-  opacity: 0.5;
-}
 
 a {
   text-decoration: none;
+  color: black;
   font-size: 15px;
   padding-left: 5px;
   font-family: Arial, Helvetica, sans-serif;

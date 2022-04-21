@@ -39,12 +39,14 @@ function NavBar() {
         </SearchWrapper>
         <IconsWrapper>
             <IconButton>
-                <Badge badgeContent={4} color="error">
+                <Badge badgeContent={1876} color="error">
                     <NotificationsIcon/>
                 </Badge>
             </IconButton>
             <IconButton>
+            <Badge badgeContent={1} color="error">
             <TextsmsIcon/>
+            </Badge>
             </IconButton>
             <IconButton>
             <Avatar alt="Usuário 1" src="https://app.lit.com.br:8443/api/downdImg/12" />
