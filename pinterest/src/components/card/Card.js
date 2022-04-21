@@ -1,13 +1,17 @@
 import React from "react";
-import { CardStyleBig, CardStyleMedium, CardStyleSmall, } from './styles'
+import { CardStyleBig, CardStyleMedium, CardStyleSmall,CardInfoSocial, CardStyleBigSocial } from './styles'
 import img1 from '../img/dog.jpeg'
 import img2 from '../img/pave.jpeg'
  function Card() {
     return (
       <>
-      <CardStyleBig>
-        <img src="https://images.unsplash.com/photo-1650372440867-8983bcbad2f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"/>
-      </CardStyleBig>
+      <CardStyleBigSocial>
+        <img src="https://images.unsplash.com/photo-1650372440867-8983bcbad2f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"/> 
+        <CardInfoSocial>
+          <img className="Avatar" src="https://app.lit.com.br:8443/api/downdImg/12"></img>
+        </CardInfoSocial>
+      </CardStyleBigSocial>
+      
       <CardStyleSmall>
         <img src="https://images.unsplash.com/photo-1650372924099-25374072ce17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"></img>
       </CardStyleSmall>

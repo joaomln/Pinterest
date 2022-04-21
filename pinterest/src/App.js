@@ -10,7 +10,7 @@ function App() {
       <>
       <NavBar/>
         <Layout>
-         <Card></Card>
+         <Card/>
         </Layout>
      
         </>
