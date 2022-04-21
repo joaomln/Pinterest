@@ -1,7 +1,10 @@
 import React from "react";
-import { CardStyleBig, CardStyleMedium, CardStyleSmall,CardInfoSocial, CardStyleBigSocial } from './styles'
+import { CardStyleBig, CardStyleMedium, CardStyleSmall,CardInfoSocial, 
+  CardStyleBigSocial, NotificationsWrapper, Counter } from './styles'
 import img1 from '../img/dog.jpeg'
 import img2 from '../img/pave.jpeg'
+import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
+
  function Card() {
     return (
       <>
@@ -9,6 +12,11 @@ import img2 from '../img/pave.jpeg'
         <img src="https://images.unsplash.com/photo-1650372440867-8983bcbad2f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"/> 
         <CardInfoSocial>
           <img className="Avatar" src="https://app.lit.com.br:8443/api/downdImg/12"></img>
+          <a href="/">Usuário 1</a> 
+          <NotificationsWrapper>
+         <FavoriteTwoToneIcon/>
+         <Counter>1987</Counter>
+       </NotificationsWrapper>
         </CardInfoSocial>
       </CardStyleBigSocial>
       
@@ -33,13 +41,27 @@ import img2 from '../img/pave.jpeg'
       <CardStyleSmall>
         <img src={img2}></img>
       </CardStyleSmall>
-      <CardStyleMedium></CardStyleMedium>
-      <CardStyleBig></CardStyleBig>
-      <CardStyleSmall></CardStyleSmall>
-      <CardStyleMedium></CardStyleMedium>
-      <CardStyleBig></CardStyleBig>
-      <CardStyleSmall></CardStyleSmall>
-      <CardStyleMedium></CardStyleMedium>
+      <CardStyleMedium>
+        <img src="https://images.unsplash.com/photo-1650386947990-99d416a970f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleMedium>
+      <CardStyleBig>
+        <img src="https://images.unsplash.com/photo-1650390838469-cffe7aff0d8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleBig>
+      <CardStyleSmall>
+        <img src="https://images.unsplash.com/photo-1650464637606-ea3e8ce23a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleSmall>
+      <CardStyleMedium>
+        <img src="https://images.unsplash.com/photo-1650465725382-a9f2754f2d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleMedium>
+      <CardStyleBig>
+        <img src="https://images.unsplash.com/photo-1650468685760-ad2d9ccddf19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleBig>
+      <CardStyleSmall>
+        <img src="https://images.unsplash.com/photo-1646491730239-8b9c21a4a859?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleSmall>
+      <CardStyleMedium>
+        <img src="https://images.unsplash.com/photo-1650399470902-0dd9259b91c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"></img>
+      </CardStyleMedium>
       </>
     );
   }

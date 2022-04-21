@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 
@@ -69,7 +70,7 @@ grid-row-end: span 45;
 export const CardInfoSocial = styled(StandardCardInfo)`
 
 grid-row-end: span 16;
-height: 20%;
+height: 10%;
 
 .Avatar {
   vertical-align: middle;
@@ -81,4 +82,30 @@ img :hover {
   opacity: 0.5;
 }
 
+a {
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+`
+export const NotificationsWrapper = styled.div `
+
+grid-row-end: span 16;
+height: 10%;
+width: 100%;
+display: flex;
+flex-direction: row;
+
+`
+export const FavoriteTwoToneIcon =styled.div `
+`
+export const Counter = styled.div`
+font-size: 15px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 0.5vh;
+margin-right: 1vh;
 `

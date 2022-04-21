@@ -47,7 +47,7 @@ function NavBar() {
             <TextsmsIcon/>
             </IconButton>
             <IconButton>
-            <Avatar alt="Remy Sharp" src="https://app.lit.com.br:8443/api/downdImg/12" />
+            <Avatar alt="Usuário 1" src="https://app.lit.com.br:8443/api/downdImg/12" />
             </IconButton>
             <IconButton>
                <KeyboardArrowDownIcon/>
