@@ -1,16 +1,19 @@
 import Layout from "./components/layout/Layout";
 import Card from "./components/card/Card";
+import NavBar from "./components/navbar/NavBar";
+
 
 
 function App() {
   return (
 
-    <div id="root">
+      <>  
+      <NavBar/>
       <Layout>
          <Card></Card>
       </Layout>
-     
-    </div>
+      </> 
+    
     
   );
 }
