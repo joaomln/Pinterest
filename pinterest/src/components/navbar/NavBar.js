@@ -64,8 +64,8 @@ function NavBar() {
           <KeyboardArrowDownIcon variant="contained" {...bindTrigger(popupState)}>
           </KeyboardArrowDownIcon>
           <Menu {...bindMenu(popupState)}>
-            <MenuItem onClick={popupState.close}>Profile</MenuItem>
-            <MenuItem onClick={popupState.close}>My account</MenuItem>
+            <MenuItem onClick={popupState.close}>Perfil</MenuItem>
+            <MenuItem onClick={popupState.close}>Minha Conta</MenuItem>
             <MenuItem onClick={popupState.close}>Logout</MenuItem>
           </Menu>
         </React.Fragment>
