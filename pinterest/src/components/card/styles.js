@@ -31,25 +31,38 @@ img{
   border-radius: 16px;
 }
 
-
+:hover img{
+  transition: .5s ease;
+  opacity: 0.5;
+}
 
 `
 
 export const CardStyleBig = styled(StandardCardInfo)`
 
 grid-row-end: span 45;
+:hover img{
+  transition: .5s ease;
+  opacity: 0.5;
+}
 
 `
 export const CardStyleMedium = styled(StandardCardInfo)`
 
 grid-row-end: span 33;
-
+:hover img{
+  transition: .5s ease;
+  opacity: 0.5;
+}
 `
 
 export const CardStyleSmall = styled(StandardCardInfo)`
 
 grid-row-end: span 26;
-
+:hover img{
+  transition: .5s ease;
+  opacity: 0.5;
+}
 `
 
 export const CardStyleBigSocial = styled(StandardCardSocialInfo)`
@@ -82,6 +95,10 @@ a {
   padding-left: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
+}
+
+:hover a {
+  text-decoration: underline;
 }
 
 `

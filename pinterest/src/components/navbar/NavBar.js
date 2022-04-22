@@ -6,9 +6,15 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import TextsmsIcon from '@material-ui/icons/Textsms'
 import Avatar from '@material-ui/core/Avatar/Avatar'
 import Badge from '@material-ui/core/Badge/Badge'
+import Menu from '@material-ui/core/Menu/Menu'
+import MenuItem from '@mui/material/MenuItem';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 import {Wrapper, LogoWrapper ,HomePageButton, FollowingButton, SearchWrapper, SearchBarWrapper, IconsWrapper} from './styled'
+
+
+
 
 
 
@@ -39,7 +45,7 @@ function NavBar() {
         </SearchWrapper>
         <IconsWrapper>
             <IconButton>
-                <Badge badgeContent={1876} color="error">
+                <Badge badgeContent={1876} max={2000} color="error">
                     <NotificationsIcon/>
                 </Badge>
             </IconButton>
@@ -52,7 +58,19 @@ function NavBar() {
             <Avatar alt="Usuário 1" src="https://app.lit.com.br:8443/api/downdImg/12" />
             </IconButton>
             <IconButton>
-               <KeyboardArrowDownIcon/>
+            <PopupState variant="popover" popupId="demo-popup-menu">
+      {(popupState) => (
+        <React.Fragment>
+          <KeyboardArrowDownIcon variant="contained" {...bindTrigger(popupState)}>
+          </KeyboardArrowDownIcon>
+          <Menu {...bindMenu(popupState)}>
+            <MenuItem onClick={popupState.close}>Profile</MenuItem>
+            <MenuItem onClick={popupState.close}>My account</MenuItem>
+            <MenuItem onClick={popupState.close}>Logout</MenuItem>
+          </Menu>
+        </React.Fragment>
+      )}
+    </PopupState>
             </IconButton>
         </IconsWrapper>
     </Wrapper>
